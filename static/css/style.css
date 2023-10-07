@@ -1,0 +1,283 @@
+*{
+  font-family: 'Montserrat';font-size: 22px;
+}
+
+:root{
+  --black : #373737;
+  --primary : #8db986;
+  --secundary : #acce91;
+  --tertiary : #badb73;
+  --light : #efeae4;
+
+  --light-transparent: rgba(239, 234, 228, 0.6);
+
+  --opacity : 0;
+}
+
+.is-primary{background-color: var(--primary)  !important;}
+.is-secundary{background-color: var(--secundary) !important;}
+.is-tertiary{background-color: var(--tertiary) !important;}
+.is-light{background-color: var(--light) !important;}
+
+.hast-text-batman{color: var(--black) !important;}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--black) !important;
+}
+
+a{
+  color: var(--tertiary);
+}
+
+header{
+  z-index: 50;
+}
+
+header a{
+  z-index: 25;
+}
+
+.has-background-cat {
+  background-image:linear-gradient(var(--light-transparent), var(--light-transparent)), url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/d6209773116977.5bfecec84bb98.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.has-background-rain {
+  background-image:linear-gradient(var(--light-transparent), var(--light-transparent)), url("https://i.pinimg.com/originals/4e/37/12/4e3712a13bb5493898c2cf73a7644ac6.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.has-background-yingyang {
+  background-image:linear-gradient(var(--light-transparent), var(--light-transparent)), url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/4cbd1373116977.5bfecec84b011.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.has-background-music {
+  background-image:linear-gradient(var(--light-transparent), var(--light-transparent)), url("https://i.pinimg.com/originals/b8/ba/79/b8ba798cc393f599e41b7d2a52ea0ee2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.has-background-darkone {
+  background-image:linear-gradient(var(--light-transparent), var(--light-transparent)), url("https://static.wixstatic.com/media/0a5ad2_35c0af66961142cf9d941f2f438a61e6~mv2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.navbar{
+  position: fixed;
+  min-width: 100%;
+  background-color: rgba(255, 255, 255, var(--opacity));
+}
+
+.navbar-item, .navbar-link {
+  color: var(--primary);
+}
+
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+  background-color: transparent;
+  color: var(--secundary);
+}
+
+.hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current), .hero.is-white strong {
+  color: var(--tertiary);
+}
+
+.page{
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: var(--light);
+}
+
+.ultra-title{
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.interesting{
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.centered{
+  display: flex !important;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.min-100{
+  min-width: 100%;
+}
+
+.centered div{
+  min-width: 100%;
+}
+
+.centered div a{
+  display: inline-block;
+}
+
+.centered div a::after{
+  content: "|";
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+.card-title h1 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  width: fit-content;
+  padding: 0.7rem 2.5rem;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  transform: translateY(-3.6rem);
+}
+
+.card-title h1::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  box-shadow: 1rem 1rem white;
+}
+
+.card-title h1::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right:-3rem;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+  box-shadow: -1rem 1rem white;
+}
+
+.card-rotator{
+  padding: 3rem;
+}
+.card-rotator .card{padding: 1rem; transition: 1s;}
+.card-rotator h1{font-weight: bold;}
+
+.card-rotator .card:hover{
+  rotate: 0deg;
+  transform: scale(1.04);
+}
+
+.card-rotator h1, .card-rotator p{
+  text-align: start;
+}
+
+.rotated-5{rotate: 5deg;}
+.rotated--3{rotate: -3deg;}
+.rotated-2{rotate: 2deg;}
+
+.hero{
+  padding-top: 6rem !important;
+}
+
+.our-section{
+  padding: 5rem;
+}
+
+.our-section .card{
+  border-radius: 1rem;
+  border: none;
+}
+
+.form-card{
+  border-radius: 1rem;
+  border: none;
+}
+
+.log-reg-forms{
+  min-width: 0 !important;
+  max-width: 70%;
+}
+
+.br{
+  width: 100%;
+  height: 1rem;
+  background-color: transparent;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0; /* Invisible al principio */
+  }
+  50% {
+    opacity: 1; /* Visible a la mitad de la animación */
+  }
+  100% {
+    opacity: 0; /* Invisible al final */
+  }
+}
+
+/* --------------------------------------------------- */
+
+.element-to-observe{transition: 1s; position: relative;}
+.card-rotator div:nth-child(0){transition-delay: 300ms;}
+.card-rotator div:nth-child(1){transition-delay: 200ms;}
+.card-rotator div:nth-child(2){transition-delay: 100ms;}
+
+.hidden-left{
+  transform: translateX(-100%);
+  opacity: 0;
+  filter: blur(1rem);
+}
+.show-left{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden-right{
+  transform: translateX(100%);
+  opacity: 0;
+  filter: blur(1rem);
+}
+.show-right{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden-bottom{
+  transform: translateY(100%);
+  opacity: 0;
+  filter: blur(1rem);
+}
+.show-bottom{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hidden-top{
+  transform: translateY(-100%);
+  opacity: 0;
+  filter: blur(1rem);
+}
+.show-top{
+  transform: translateY(0);
+  opacity: 1;
+}

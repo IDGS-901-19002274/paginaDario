@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{%block content%}
+<div class="page">
+  <div class="hero is-fullheight is-white has-background-music">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-6 centered">
+          <div class="hidden-top element-to-observe card form-card">
+                        <div class="card-content">
+                            <form >
+                                <div class="field">
+                                    <label class="label">Nombre</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Tu nombre">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Correo Electrónico</label>
+                                    <div class="control">
+                                        <input class="input" type="email" placeholder="correo@example.com">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Mensaje</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Escribe tu mensaje aquí"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        </div>
+        <div class="column is-6">
+          <h1 class="hidden-bottom element-to-observe ultra-title">¿Alguna duda? Contáctanos sin miedo</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}

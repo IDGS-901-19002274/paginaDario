@@ -1,0 +1,51 @@
+<header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img class="image" src="../static/img/logo2.png" alt="Logo" style="min-height: 4rem">
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                    </div>
+                    <a class="navbar-item" href="/repositorios">
+                        Nuestros Clientes
+                    </a>
+                    <a class="navbar-item" href="/nosotros">
+                        Nosotros
+                    </a>
+                    <a class="navbar-item" href="/contacto">
+                        Contacto
+                    </a>
+                </div>
+                <!-- Botón "Iniciar Sesión" a la derecha -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" href="/login">
+                                Iniciar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+// Accede al elemento HTML raíz (:root)
+const root = document.documentElement;
+
+// Función para actualizar la variable CSS con el valor de desplazamiento
+function actualizarVariableDeScroll() {
+  const valorDeScroll = (1 / 300) * window.scrollY;
+  root.style.setProperty('--opacity', valorDeScroll);
+}
+
+// Agrega un evento scroll al documento para actualizar la variable cuando se desplace
+window.addEventListener('scroll', actualizarVariableDeScroll);
+</script>

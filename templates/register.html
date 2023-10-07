@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero is-white is-fullheight has-background-music">
+    <div class="hero-body">
+        <div class="container centered">
+            <div class="hidden-top element-to-observe card form-card log-reg-forms" style="padding: 1rem;">
+                <div class="card-title">
+                    <h1 class="title">Registro</h1>
+                </div>
+                <form>
+                    <h1 class="subtitle">Nombre completo</h1>
+                    <input type="text" class="input" placeholder="Ingrese su nombre completo">
+                    <div class="br"></div>
+                    <h1 class="subtitle">Nombre de usuario</h1>
+                    <input type="text" class="input" placeholder="Ingrese su nombre de usuario">
+                    <div class="br"></div>
+                    <h1 class="subtitle">Contraseña</h1>
+                    <input type="text" class="input" placeholder="Ingrese su contraseña"><br>
+                    <div class="br"></div>
+                    <input type="Submit" class="button is-dark" value="Registrarme">
+                    <div class="br"></div>
+                    <p>Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
+                    <div class="br"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
